@@ -11,19 +11,14 @@
 •	Текст в каждой строке должен быть уникален.
 •	Должны быть выведены все возможные комбинации. */
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String a = " Мама ";
-        String b = " Мыла ";
-        String c = " Раму ";
-        System.out.println(a + b + c);
-        System.out.println(a + c + b);
-        System.out.println(c + a + b);
-        System.out.println(c + b + a);
-        System.out.println(b + c + a);
-        System.out.println(b + a + c);
+        String words[] = {"Мама", "Мыла", "Раму"};
+        System.out.println(words[0]+ words[1]+ words[2]);
+        System.out.println(words[0]+ words[2]+ words[1]);
+        System.out.println(words[1]+ words[0]+ words[2]);
+        System.out.println(words[1]+ words[2]+ words[0]);
+        System.out.println(words[2]+ words[0]+ words[1]);
+        System.out.println(words[2]+ words[1]+ words[0]);
+        }
     }
-}
