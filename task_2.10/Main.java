@@ -4,12 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        int numbers[] = {1,2,3,4,4,5};
-        boolean flag = false;
-        for (int i = 0; i < numbers.length-1; i++) {
-if (numbers[i]==numbers[i+1]) flag=true;
+        int nums[] = {4, 2, 6, 2, 65,65};
+        String flag = "нет";
+        for (int i=0; i < nums.length-1; i++){
+           if (nums[i]==nums[i+1]) {flag = "да";};
         }
-        if (flag==true) System.out.println("Да");
-        else System.out.printf("Нет");
-        }
+        System.out.println(flag);
     }
+}
