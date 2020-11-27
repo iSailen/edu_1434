@@ -1,4 +1,5 @@
 /*
+2.3
 Используя цикл for вывести на экран прямоугольный треугольник из восьмёрок со сторонами 10 и 10.
 Пример вывода на экран:
 8
@@ -15,10 +16,12 @@
 
 public class Main {
     public static void main(String[] args) {
-        String s = "8";
-        for (int count = 0; count < 10; count++){
-            System.out.println(s);
-            s = s + 8;
+        for (int i = 1;i<=10;i++) {
+            for (int j = 1;j<=i; j++ ) {
+                System.out.printf("8");
+            }
+            System.out.println();
         }
+
     }
 }
