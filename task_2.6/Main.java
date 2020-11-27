@@ -1,19 +1,18 @@
 /*
+2.6
+
 Задание: Даны переменные a и b. Проверьте, что a делится без остатка на b. Если это так - выведите 'Делится' и результат деления, иначе выведите 'Делится с остатком' и остаток от деления.
 */
 
-import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите  число:");
-        int a = 10;
-        int b = 1;
-        b = scanner.nextInt();
-        int c;
-        c = a % b;
-        System.out.println(c == 0 ? "Делится" : "Делится с остатком = " +  c);
+        double a = 7;
+        double b = 3;
+        if (a % b == 0) {
+            System.out.println("Делится " + String.format("%.0f",a/b));}
+        else{
+            System.out.println("Делится с остатком " + String.format("%.0f",a % b));
+        }
+
     }
 }
