@@ -1,4 +1,6 @@
-/* Написать функцию, которая вычисляет минимум из трёх чисел.
+/*
+3.1
+Написать функцию, которая вычисляет минимум из трёх чисел.
 Требования:
 •	Программа должна выводить текст на экран.
 •	Метод min не должен выводить текст на экран.
@@ -7,25 +9,19 @@
 •	Метод min должен возвращать минимальное значение из чисел a, b и с.
 */
 
-import java.util.Scanner;
-
 public class Main {
     public static int min(int a, int b, int c) {
-        int min =a ;
-        if (a<=b && a<=c)
-            min = a;
-        else if (a>=b && b<=c)
-            min =b;
-        else if (c<=a && b>=c)
-            min = c;
+        int min=a;
+        if (a<=b && a<=c) {min=a;}
+        if (a>=b && b<=c) {min=b;}
+        if (a>=c && b>=c) {min=c;}
         return min;
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println(min(1, 2, 3));
         System.out.println(min(-1, -2, -3));
         System.out.println(min(3, 5, 3));
         System.out.println(min(5, 5, 10));
     }
-
 }
